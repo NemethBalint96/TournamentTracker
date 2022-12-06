@@ -1,5 +1,4 @@
 ﻿using TrackerLibrary;
-using TrackerLibrary.DataAccess;
 using TrackerLibrary.Models;
 
 namespace TrackerUI
@@ -22,7 +21,7 @@ namespace TrackerUI
                     prizePercantageValue.Text);
 
                 GlobalConfig.Connection.CreatePrize(model);
-                
+
                 placeNameValue.Text = "";
                 placeNumberValue.Text = "";
                 prizeAmountValue.Text = "0";
