@@ -78,4 +78,9 @@ public class TextConnector : IDataConnection
         
         return model;
     }
+
+    public List<TeamModel> GetTeam_All()
+    {
+        throw new NotImplementedException();
+    }
 }
