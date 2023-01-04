@@ -1,10 +1,21 @@
-﻿namespace TrackerUI
+﻿using TrackerLibrary;
+using TrackerLibrary.Models;
+
+namespace TrackerUI;
+
+public partial class TournamentDashboardForm : Form
 {
-    public partial class TournamentDashboardForm : Form
+    List<TournamentModel> tournaments = GlobalConfig.Connection.GetTournament_All();
+    public TournamentDashboardForm()
     {
-        public TournamentDashboardForm()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        WireUpLists();
+    }
+
+    private void WireUpLists()
+    {
+        loadExistingTournamentDropDown.DataSource = tournaments;
+        loadExistingTournamentDropDown.DisplayMember= "TournamentName";
     }
 }

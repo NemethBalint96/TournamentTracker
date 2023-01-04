@@ -10,4 +10,5 @@ public interface IDataConnection
     void CreateTournament(TournamentModel model);
     List<TeamModel> GetTeam_All();
     List<PersonModel> GetPerson_All();
+    List<TournamentModel> GetTournament_All();
 }
