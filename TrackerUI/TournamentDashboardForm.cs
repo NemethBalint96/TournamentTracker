@@ -18,4 +18,17 @@ public partial class TournamentDashboardForm : Form
         loadExistingTournamentDropDown.DataSource = tournaments;
         loadExistingTournamentDropDown.DisplayMember= "TournamentName";
     }
+
+    private void createTorunamentButton_Click(object sender, EventArgs e)
+    {
+        CreateTournamentForm frm = new CreateTournamentForm();
+        frm.Show();
+    }
+
+    private void loadTorunamentButton_Click(object sender, EventArgs e)
+    {
+        TournamentModel tm = (TournamentModel)loadExistingTournamentDropDown.SelectedItem;
+        TournamentViewerForm frm = new TournamentViewerForm(tm);
+        frm.Show();
+    }
 }

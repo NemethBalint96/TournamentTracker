@@ -80,6 +80,7 @@
             this.loadTorunamentButton.TabIndex = 36;
             this.loadTorunamentButton.Text = "Load Torunament";
             this.loadTorunamentButton.UseVisualStyleBackColor = true;
+            this.loadTorunamentButton.Click += new System.EventHandler(this.loadTorunamentButton_Click);
             // 
             // createTorunamentButton
             // 

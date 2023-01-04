@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TournamentViewerForm));
             this.headerLabel = new System.Windows.Forms.Label();
             this.unplayedOnlyCheckbox = new System.Windows.Forms.CheckBox();
-            this.mathcupListBox = new System.Windows.Forms.ListBox();
+            this.matchupListBox = new System.Windows.Forms.ListBox();
             this.tournamentName = new System.Windows.Forms.Label();
             this.roundLabel = new System.Windows.Forms.Label();
             this.roundDropDown = new System.Windows.Forms.ComboBox();
@@ -69,15 +69,16 @@
             this.unplayedOnlyCheckbox.Text = "Unplayed Only";
             this.unplayedOnlyCheckbox.UseVisualStyleBackColor = true;
             // 
-            // mathcupListBox
+            // matchupListBox
             // 
-            this.mathcupListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mathcupListBox.FormattingEnabled = true;
-            this.mathcupListBox.ItemHeight = 30;
-            this.mathcupListBox.Location = new System.Drawing.Point(39, 186);
-            this.mathcupListBox.Name = "mathcupListBox";
-            this.mathcupListBox.Size = new System.Drawing.Size(320, 242);
-            this.mathcupListBox.TabIndex = 2;
+            this.matchupListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.matchupListBox.FormattingEnabled = true;
+            this.matchupListBox.ItemHeight = 30;
+            this.matchupListBox.Location = new System.Drawing.Point(39, 186);
+            this.matchupListBox.Name = "matchupListBox";
+            this.matchupListBox.Size = new System.Drawing.Size(320, 242);
+            this.matchupListBox.TabIndex = 2;
+            this.matchupListBox.SelectedIndexChanged += new System.EventHandler(this.matchupListBox_SelectedIndexChanged);
             // 
             // tournamentName
             // 
@@ -108,6 +109,7 @@
             this.roundDropDown.Name = "roundDropDown";
             this.roundDropDown.Size = new System.Drawing.Size(244, 38);
             this.roundDropDown.TabIndex = 6;
+            this.roundDropDown.SelectedIndexChanged += new System.EventHandler(this.roundDropDown_SelectedIndexChanged);
             // 
             // teamOneName
             // 
@@ -210,7 +212,7 @@
             this.Controls.Add(this.roundDropDown);
             this.Controls.Add(this.roundLabel);
             this.Controls.Add(this.tournamentName);
-            this.Controls.Add(this.mathcupListBox);
+            this.Controls.Add(this.matchupListBox);
             this.Controls.Add(this.unplayedOnlyCheckbox);
             this.Controls.Add(this.headerLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -227,7 +229,7 @@
 
         private Label headerLabel;
         private CheckBox unplayedOnlyCheckbox;
-        private ListBox mathcupListBox;
+        private ListBox matchupListBox;
         private Label tournamentName;
         private Label roundLabel;
         private ComboBox roundDropDown;
