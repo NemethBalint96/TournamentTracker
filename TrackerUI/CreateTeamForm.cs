@@ -102,7 +102,7 @@ public partial class CreateTeamForm : Form
             availableTeamMembers.Remove(p);
             selectedTeamMembers.Add(p);
 
-            WireUpLists(); 
+            WireUpLists();
         }
     }
 
@@ -115,7 +115,7 @@ public partial class CreateTeamForm : Form
             selectedTeamMembers.Remove(p);
             availableTeamMembers.Add(p);
 
-            WireUpLists(); 
+            WireUpLists();
         }
     }
 

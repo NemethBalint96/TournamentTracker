@@ -34,7 +34,7 @@ public class PersonModel
     {
         get
         {
-            return $"{ FirstName } { LastName }";
+            return $"{FirstName} {LastName}";
         }
     }
 
