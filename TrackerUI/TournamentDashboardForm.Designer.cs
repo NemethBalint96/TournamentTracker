@@ -32,7 +32,7 @@
             this.headerLabel = new System.Windows.Forms.Label();
             this.loadExistingTournamentDropDown = new System.Windows.Forms.ComboBox();
             this.loadExistingTournamentLabel = new System.Windows.Forms.Label();
-            this.loadTorunamentButton = new System.Windows.Forms.Button();
+            this.loadTournamentButton = new System.Windows.Forms.Button();
             this.createTorunamentButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -66,21 +66,21 @@
             this.loadExistingTournamentLabel.TabIndex = 21;
             this.loadExistingTournamentLabel.Text = "Load Existing Tournament";
             // 
-            // loadTorunamentButton
+            // loadTournamentButton
             // 
-            this.loadTorunamentButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.loadTorunamentButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.loadTorunamentButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.loadTorunamentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadTorunamentButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.loadTorunamentButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.loadTorunamentButton.Location = new System.Drawing.Point(138, 186);
-            this.loadTorunamentButton.Name = "loadTorunamentButton";
-            this.loadTorunamentButton.Size = new System.Drawing.Size(224, 53);
-            this.loadTorunamentButton.TabIndex = 36;
-            this.loadTorunamentButton.Text = "Load Torunament";
-            this.loadTorunamentButton.UseVisualStyleBackColor = true;
-            this.loadTorunamentButton.Click += new System.EventHandler(this.loadTorunamentButton_Click);
+            this.loadTournamentButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.loadTournamentButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.loadTournamentButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.loadTournamentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loadTournamentButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.loadTournamentButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.loadTournamentButton.Location = new System.Drawing.Point(138, 186);
+            this.loadTournamentButton.Name = "loadTournamentButton";
+            this.loadTournamentButton.Size = new System.Drawing.Size(224, 53);
+            this.loadTournamentButton.TabIndex = 36;
+            this.loadTournamentButton.Text = "Load Tournament";
+            this.loadTournamentButton.UseVisualStyleBackColor = true;
+            this.loadTournamentButton.Click += new System.EventHandler(this.loadTorunamentButton_Click);
             // 
             // createTorunamentButton
             // 
@@ -105,7 +105,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(501, 357);
             this.Controls.Add(this.createTorunamentButton);
-            this.Controls.Add(this.loadTorunamentButton);
+            this.Controls.Add(this.loadTournamentButton);
             this.Controls.Add(this.loadExistingTournamentDropDown);
             this.Controls.Add(this.loadExistingTournamentLabel);
             this.Controls.Add(this.headerLabel);
@@ -124,7 +124,7 @@
         private Label headerLabel;
         private ComboBox loadExistingTournamentDropDown;
         private Label loadExistingTournamentLabel;
-        private Button loadTorunamentButton;
+        private Button loadTournamentButton;
         private Button createTorunamentButton;
     }
 }
