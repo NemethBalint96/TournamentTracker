@@ -12,7 +12,6 @@ public static class TournamentLogic
 
     public static void CreateRounds(TournamentModel model)
     {
-        // TODO - Random?!
         List<TeamModel> randomizedTeams = RandomizeTeamOrder(model.EnteredTeams);
         int rounds = FindNumberOfRounds(randomizedTeams.Count);
         int byes = NumberOfByes(rounds, randomizedTeams.Count);
